@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rain"
+    android:overScrollMode="never"
+    tools:context=".ui.activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_main_draw"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:background="#0F0F0F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_main_province_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/default_province"
+            android:textColor="#f5f5f5"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_main_draw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnert_main_select_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/spinner_background"
+            android:spinnerMode="dialog"
+            app:layout_constraintBottom_toBottomOf="@+id/view_main_draw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/primary_fragment_container"
+            android:name="com.silso.additional_weather_app.ui.fragment.PrimaryFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_main_draw" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/school_fragment_container"
+            android:name="com.silso.additional_weather_app.ui.fragment.SchoolFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/primary_fragment_container" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/detail_fragment_container"
+            android:name="com.silso.additional_weather_app.ui.fragment.DetailFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/school_fragment_container" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/time_zone_fragment_container"
+            android:name="com.silso.additional_weather_app.ui.fragment.TimeZoneFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_fragment_container" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

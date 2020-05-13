@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="time_data"
+            type="com.silso.additional_weather_app.data.TimeData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time_zone_item_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{time_data.hour}"
+            android:textAlignment="center"
+            android:textColor="#CCCCCC"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/image_time_zone_item_weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            app:bind_image="@{time_data.resource}"
+            app:srcCompat="@drawable/sunny" />
+
+        <TextView
+            android:id="@+id/tv_time_zone_item_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{time_data.temp}"
+            android:textAlignment="center"
+            android:textColor="#CCCCCC"
+            android:textSize="28sp" />
+
+<!--°C, %, %-->
+        <TextView
+            android:id="@+id/tv_time_zone_item_rain_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="강수"
+            android:textAlignment="center"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_time_zone_item_rain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{time_data.rain}"
+            android:textAlignment="center"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_time_zone_item_humi_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="습도"
+            android:textAlignment="center"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_time_zone_item_humi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{time_data.humidity}"
+            android:textAlignment="center"
+            android:textColor="#CCCCCC" />
+    </LinearLayout>
+</layout>
