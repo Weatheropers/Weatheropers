@@ -1,6 +1,5 @@
 # Weatheropers
-<img src="https://img.shields.io/github/languages/count/Weatheropers/Weatheropers">
-<img src="https://img.shields.io/github/languages/top/Weatheropers/Weatheropers">
+<img src="https://img.shields.io/github/languages/count/Weatheropers/Weatheropers"> <img src="https://img.shields.io/github/languages/top/Weatheropers/Weatheropers">
 
 <p align='center'>Weatheropers 메인 저장소</p> 
 
@@ -13,3 +12,4 @@
 - 유빈 : 코틀린으로 모바일 어플리케이션 개발.
 - 동현 : 파이썬 장고로 rest API 개발, 배포.
 
+ 
