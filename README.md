@@ -1,7 +1,8 @@
 # Weatheropers
-Weatheropers의 메인 repo
 <img src="https://img.shields.io/github/languages/count/Weatheropers/Weatheropers">
 <img src="https://img.shields.io/github/languages/top/Weatheropers/Weatheropers">
+
+<p align='center'>Weatheropers 메인 저장소</p> 
 
 # 소개
 > https://github.com/Kimdonghyeon7645/ScienceProject
