@@ -1,7 +1,7 @@
 # Weatheropers project main repo
 <img src="https://img.shields.io/github/languages/count/Weatheropers/Weatheropers"> <img src="https://img.shields.io/github/languages/top/Weatheropers/Weatheropers">
 
-<p align='center'><img src='https://user-images.githubusercontent.com/48408417/82752715-fa99f500-9dfa-11ea-9baa-de9fc653f0a6.png' width='500'></p>
+<p align='center'><img src='https://user-images.githubusercontent.com/48408417/84583197-2411d380-ae31-11ea-9f5d-983f5e9a1f50.png' width='500'></p>
 <h3 align='center'>Weatheropers프로젝트의 메인 저장소</p> 
 
 # 소개
